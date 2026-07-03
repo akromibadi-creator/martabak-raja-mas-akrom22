@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami - Martabak Raja Mas Akrom</title>
+    
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { poppins: ['Poppins', 'sans-serif'] },
+                    colors: {
+                        brand: {
+                            red: '#D32F2F',    
+                            darkRed: '#B71C1C',
+                            yellow: '#FFC107', 
+                            dark: '#212121',   
+                            light: '#F5F5F5'   
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-poppins bg-brand-light text-brand-dark antialiased pt-20">
+
+    <!-- NAVBAR (Sama Persis dengan Index) -->
+    <nav class="bg-brand-red text-white fixed w-full top-0 z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="index.html" class="flex-shrink-0 flex items-center gap-2 cursor-pointer">
+                    <i class="fa-solid fa-crown text-brand-yellow text-2xl"></i>
+                    <span class="font-bold text-xl md:text-2xl tracking-wide uppercase">Raja Mas Akrom</span>
+                </a>
+                
+                <!-- Desktop Navigation Links -->
+                <div class="hidden md:flex space-x-6 lg:space-x-8">
+                    <a href="index.html" class="hover:text-brand-yellow transition-colors font-medium">Beranda</a>
+                    <a href="tentang.html" class="text-brand-yellow font-bold">Tentang Kami</a>
+                    <a href="katalog.html" class="hover:text-brand-yellow transition-colors font-medium">Katalog Menu</a>
+                    <a href="bayar.html" class="hover:text-brand-yellow transition-colors font-medium">Cara Bayar</a>
+                    <a href="kontak.html" class="hover:text-brand-yellow transition-colors font-medium">Kontak</a>
+                </div>
+
+                <!-- CTA Button -->
+                <div class="hidden md:block">
+                    <a href="katalog.html" class="bg-brand-yellow text-brand-dark px-6 py-2 rounded-full font-bold hover:bg-yellow-400 transform hover:scale-105 transition-all shadow-md">
+                        Pesan Sekarang
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-white hover:text-brand-yellow focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-brand-darkRed pb-4 px-4 space-y-2">
+            <a href="index.html" class="block text-white font-medium py-2 border-b border-red-800">Beranda</a>
+            <a href="tentang.html" class="block text-brand-yellow font-bold py-2 border-b border-red-800">Tentang Kami</a>
+            <a href="katalog.html" class="block text-white font-medium py-2 border-b border-red-800">Katalog Menu</a>
+            <a href="bayar.html" class="block text-white font-medium py-2 border-b border-red-800">Cara Bayar</a>
+            <a href="kontak.html" class="block text-white font-medium py-2">Kontak</a>
+        </div>
+    </nav>
+
+    <!-- HEADER BANNER -->
+    <header class="bg-brand-dark text-white py-16 text-center relative overflow-hidden">
+        <div class="absolute inset-0 opacity-20 bg-[url('https://berempat.com/wp-content/uploads/2023/09/Gambar-30.jpg')] bg-cover bg-center"></div>
+        <div class="max-w-4xl mx-auto px-4 relative z-10">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Kisah Sang Raja</h1>
+            <p class="text-brand-yellow text-lg md:text-xl font-medium">Dedikasi kami dalam setiap loyang martabak untuk kepuasan Anda.</p>
+        </div>
+    </header>
+
+    <!-- CONTENT SECTION (Kisah & Keunggulan) -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <!-- Gambar Ilustrasi Pembuatan -->
+                <div class="w-full md:w-1/2">
+                    <div class="relative">
+                        <img src="/umkm/Gemini_Generated_Image_4kdilp4kdilp4kdi.png">
+                        <div class="absolute -bottom-6 -right-6 bg-brand-yellow text-brand-dark p-6 rounded-2xl shadow-lg hidden lg:block">
+                            <h4 class="text-3xl font-bold">100%</h4>
+                            <p class="font-medium">Bahan Premium</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Narasi Profil Toko -->
+                <div class="w-full md:w-1/2">
+                    <h2 class="text-3xl font-bold text-brand-dark mb-4">Lebih dari Sekadar <span class="text-brand-red">Martabak</span></h2>
+                    <div class="h-1 w-20 bg-brand-yellow mb-6 rounded"></div>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Bermula dari sebuah gerobak sederhana di sudut jalan raya, Mas Akrom berdedikasi menciptakan adonan martabak yang tidak sekadar manis, tetapi juga memberikan kehangatan sejati. Melalui proses fermentasi adonan yang sempurna serta pemilihan tepung gandum protein khusus, lahirlah tekstur martabak bersarang yang lembut tiada tara.
+                    </p>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        <strong>Martabak Raja Mas Akrom</strong> didirikan untuk menghadirkan standar baru dalam menikmati martabak manis dan telur yang premium namun tetap ramah di kantong.
+                    </p>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Kami percaya rahasia kelezatan sejati terletak pada kejujuran bahan baku. Oleh sebab itu, kami menggunakan racikan tepung berkualitas tinggi, limpahan keju pilihan, serta olesan mentega Wijsman asli yang menghasilkan aroma harum khas dan tekstur super lembut bersarang yang tahan lama.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 mt-8">
+                        <a href="katalog.html" class="bg-brand-red text-white px-6 py-3 rounded-full font-bold text-center hover:bg-brand-darkRed shadow-md transition-all">
+                            Lihat Varian Menu
+                        </a>
+                        <a href="kontak.html" class="border-2 border-brand-red text-brand-red px-6 py-3 rounded-full font-bold text-center hover:bg-brand-red hover:text-white transition-all">
+                            Hubungi Admin
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-brand-dark text-gray-400 py-10 text-center">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-center items-center gap-2 mb-4">
+                <i class="fa-solid fa-crown text-brand-yellow"></i>
+                <span class="font-bold text-white text-xl uppercase">Martabak Raja Mas Akrom</span>
+            </div>
+            <p class="mb-6">Kualitas Premium, Rasa Maksimal. Rajanya Martabak di Hati Anda.</p>
+            <p class="text-sm">&copy; 2026 Martabak Raja Mas Akrom. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Mobile Menu Toggle -->
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak Kami - Martabak Raja Mas Akrom</title>
+    
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { poppins: ['Poppins', 'sans-serif'] },
+                    colors: {
+                        brand: {
+                            red: '#D32F2F',    
+                            darkRed: '#B71C1C',
+                            yellow: '#FFC107', 
+                            dark: '#212121',   
+                            light: '#F5F5F5'   
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-poppins bg-brand-light text-brand-dark antialiased pt-20">
+
+    <!-- NAVBAR (Sama Persis dengan Halaman Lain) -->
+    <nav class="bg-brand-red text-white fixed w-full top-0 z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="index.html" class="flex-shrink-0 flex items-center gap-2 cursor-pointer">
+                    <i class="fa-solid fa-crown text-brand-yellow text-2xl"></i>
+                    <span class="font-bold text-xl md:text-2xl tracking-wide uppercase">Raja Mas Akrom</span>
+                </a>
+                
+                <!-- Desktop Navigation Links -->
+                <div class="hidden md:flex space-x-6 lg:space-x-8">
+                    <a href="index.html" class="hover:text-brand-yellow transition-colors font-medium">Beranda</a>
+                    <a href="tentang.html" class="hover:text-brand-yellow transition-colors font-medium">Tentang Kami</a>
+                    <a href="katalog.html" class="hover:text-brand-yellow transition-colors font-medium">Katalog Menu</a>
+                    <a href="bayar.html" class="hover:text-brand-yellow transition-colors font-medium">Cara Bayar</a>
+                    <a href="kontak.html" class="text-brand-yellow font-bold">Kontak</a>
+                </div>
+
+                <!-- CTA Button -->
+                <div class="hidden md:block">
+                    <a href="katalog.html" class="bg-brand-yellow text-brand-dark px-6 py-2 rounded-full font-bold hover:bg-yellow-400 transform hover:scale-105 transition-all shadow-md">
+                        Pesan Sekarang
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-white hover:text-brand-yellow focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-brand-darkRed pb-4 px-4 space-y-2">
+            <a href="index.html" class="block text-white font-medium py-2 border-b border-red-800">Beranda</a>
+            <a href="tentang.html" class="block text-white font-medium py-2 border-b border-red-800">Tentang Kami</a>
+            <a href="katalog.html" class="block text-white font-medium py-2 border-b border-red-800">Katalog Menu</a>
+            <a href="bayar.html" class="block text-white font-medium py-2 border-b border-red-800">Cara Bayar</a>
+            <a href="kontak.html" class="block text-brand-yellow font-bold py-2">Kontak</a>
+        </div>
+    </nav>
+
+    <!-- HEADER BANNER -->
+    <header class="bg-brand-dark text-white py-12 text-center">
+        <div class="max-w-4xl mx-auto px-4">
+            <h1 class="text-3xl md:text-4xl font-bold mb-3">Hubungi Kami</h1>
+            <p class="text-brand-yellow text-base md:text-lg font-medium">Punya pertanyaan, kritik, atau saran? Kami selalu siap mendengar dari Anda.</p>
+        </div>
+    </header>
+
+    <!-- CONTENT SECTION -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            
+            <!-- Informasi Kontak & Peta -->
+            <div class="space-y-8">
+                <div>
+                    <h2 class="text-2xl font-bold text-brand-dark mb-6 border-b-2 border-brand-red pb-2 inline-block">Informasi Toko</h2>
+                    
+                    <div class="space-y-6">
+                        <!-- Alamat -->
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-md text-brand-red flex-shrink-0 text-xl">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg">Alamat Kami</h3>
+                                <p class="text-gray-600">(cabang Pusat) Jl. Lintas Tengah Sumatera, Martapura, Kab. Ogan Komering Ulu Timur, Sumatera Selatan</p>
+                                <p class="text-gray-600">(cabang 2    ) Jl. Kotanegara, Agung Jati Mendayun, Kab. Ogan Komering Ulu Timur, Sumatera Selatan</p>
+                                  <p class="text-gray-600">(cabang 3) Jl. Sultan Badarudin 2, Ulu Sungai, Kota Palembang, Sumatera Selatan</p>
+                            </div>
+                        </div>
+
+                        <!-- WA -->
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-md text-green-500 flex-shrink-0 text-xl">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg">WhatsApp / Telepon</h3>
+                                <p class="text-gray-600">+62 838-4939-5147</p>
+                            </div>
+                        </div>
+
+                        <!-- Jam Operasional -->
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-md text-brand-yellow flex-shrink-0 text-xl">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg">Jam Operasional</h3>
+                                <p class="text-gray-600">Setiap Hari: 16:00 - 23:00 WIB</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Google Maps Embed -->
+                <div class="bg-white p-2 rounded-2xl shadow-md">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127607.45899388836!2d104.2818973!3d-4.321855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3878b2750fc68b%3A0xf69c5e3d7426b3e!2sMartapura%2C%20Ogan%20Komering%20Ulu%20Timur%20Regency%2C%20South%20Sumatra!5e0!3m2!1sen!2sid!4v1689000000000!5m2!1sen!2sid" 
+                        width="100%" 
+                        height="250" 
+                        style="border:0; border-radius: 12px;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+
+            <!-- Formulir Kirim Pesan -->
+            <div class="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-brand-red">
+                <h2 class="text-2xl font-bold text-brand-dark mb-2">Kirim Pesan</h2>
+                <p class="text-gray-500 mb-6 text-sm">Pesan Anda akan langsung diarahkan ke tautan chat admin WhatsApp kami.</p>
+                
+                <form id="waForm" class="space-y-5">
+                    <div>
+                        <label for="nama" class="block text-sm font-semibold text-gray-700 mb-1">Nama Lengkap</label>
+                        <input type="text" id="nama" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-transparent transition-all" placeholder="Masukkan nama Anda">
+                    </div>
+                    
+                    <div>
+                        <label for="keperluan" class="block text-sm font-semibold text-gray-700 mb-1">Keperluan</label>
+                        <select id="keperluan" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-transparent transition-all">
+                            <option value="Tanya Menu / Harga">Pertanyaan Menu & Harga</option>
+                            <option value="Pesanan Acara Besar">Pesanan Acara / Jumlah Besar</option>
+                            <option value="Kritik & Saran">Kritik & Saran</option>
+                            <option value="Lainnya">Lainnya</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="pesan" class="block text-sm font-semibold text-gray-700 mb-1">Pesan Anda</label>
+                        <textarea id="pesan" rows="4" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-transparent transition-all" placeholder="Tulis pesan Anda di sini..."></textarea>
+                    </div>
+
+                    <button type="button" onclick="kirimKeWA()" class="w-full bg-brand-red text-white py-3 px-6 rounded-lg font-bold text-lg hover:bg-brand-darkRed transform hover:-translate-y-1 transition-all flex items-center justify-center gap-2 shadow-md">
+                        <i class="fa-solid fa-paper-plane"></i> Kirim via WhatsApp
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-brand-dark text-gray-400 py-10 text-center">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-center items-center gap-2 mb-4">
+                <i class="fa-solid fa-crown text-brand-yellow"></i>
+                <span class="font-bold text-white text-xl uppercase">Martabak Raja Mas Akrom</span>
+            </div>
+            <p class="mb-6">Kualitas Premium, Rasa Maksimal. Rajanya Martabak di Hati Anda.</p>
+            <p class="text-sm">&copy; 2026 Martabak Raja Mas Akrom. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script>
+        // Mobile Menu Toggle Logic
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // WhatsApp Form API Logic
+        function kirimKeWA() {
+            const nama = document.getElementById('nama').value;
+            const keperluan = document.getElementById('keperluan').value;
+            const pesan = document.getElementById('pesan').value;
+            
+            // Masukkan nomor WhatsApp tujuan toko Anda (Gunakan format 62 tanpa kode '+')
+            const nomorWA = "6283849395147"; 
+
+            if(nama === "" || pesan === "") {
+                alert("Harap isi Nama dan Pesan Anda terlebih dahulu.");
+                return;
+            }
+
+            const teksWA = `Halo Admin Martabak Raja Mas Akrom, %0A%0A*Nama:* ${nama} %0A*Keperluan:* ${keperluan} %0A*Pesan:* %0A${pesan}`;
+            const urlWA = `https://wa.me/${nomorWA}?text=${teksWA}`;
+            
+            window.open(urlWA, '_blank');
+        }
+    </script>
+</body>
+</html>

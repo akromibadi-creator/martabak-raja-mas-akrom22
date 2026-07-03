@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martabak Raja Mas Akrom - Halaman Utama</title>
+    
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { poppins: ['Poppins', 'sans-serif'] },
+                    colors: {
+                        brand: {
+                            red: '#D32F2F',    
+                            darkRed: '#B71C1C',
+                            yellow: '#FFC107', 
+                            dark: '#212121',   
+                            light: '#F5F5F5'   
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://png.pngtree.com/thumb_back/fh260/background/20251024/pngtree-delicious-martabak-manis-with-chocolate-peanuts-and-cheese-image_19974770.webp');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="font-poppins bg-brand-light text-brand-dark antialiased">
+
+    <!-- NAVBAR (Sudah Terhubung ke Semua Halaman) -->
+    <nav class="bg-brand-red text-white fixed w-full top-0 z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="index.html" class="flex-shrink-0 flex items-center gap-2 cursor-pointer">
+                    <i class="fa-solid fa-crown text-brand-yellow text-2xl"></i>
+                    <span class="font-bold text-xl md:text-2xl tracking-wide uppercase">Raja Mas Akrom</span>
+                </a>
+                
+                <!-- Desktop Navigation Links -->
+                <div class="hidden md:flex space-x-6 lg:space-x-8">
+                    <a href="index.html" class="text-brand-yellow font-bold">Beranda</a>
+                    <a href="tentang.html" class="hover:text-brand-yellow transition-colors font-medium">Tentang Kami</a>
+                    <a href="katalog.html" class="hover:text-brand-yellow transition-colors font-medium">Katalog Menu</a>
+                    <a href="bayar.html" class="hover:text-brand-yellow transition-colors font-medium">Cara Bayar</a>
+                    <a href="kontak.html" class="hover:text-brand-yellow transition-colors font-medium">Kontak</a>
+                </div>
+
+                <!-- CTA Button -->
+                <div class="hidden md:block">
+                    <a href="katalog.html" class="bg-brand-yellow text-brand-dark px-6 py-2 rounded-full font-bold hover:bg-yellow-400 transform hover:scale-105 transition-all shadow-md">
+                        Pesan Sekarang
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-white hover:text-brand-yellow focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-brand-darkRed pb-4 px-4 space-y-2">
+            <a href="index.html" class="block text-brand-yellow font-bold py-2 border-b border-red-800">Beranda</a>
+            <a href="tentang.html" class="block text-white font-medium py-2 border-b border-red-800">Tentang Kami</a>
+            <a href="katalog.html" class="block text-white font-medium py-2 border-b border-red-800">Katalog Menu</a>
+            <a href="bayar.html" class="block text-white font-medium py-2 border-b border-red-800">Cara Bayar</a>
+            <a href="kontak.html" class="block text-white font-medium py-2">Kontak</a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero-bg h-screen flex flex-col justify-center items-center text-center px-4 relative pt-20">
+        <h1 class="text-4xl md:text-6xl font-bold text-white mb-4 leading-tight">
+            Sajian Martabak Manis  <span class="text-brand-yellow">Mas Akrom</span>
+        </h1>
+        <p class="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl">
+            Merasakan sensasi kelembutan adonan legendaris rahasia keluarga, dipadu dengan lelehan mentega premium Wysman dan taburan topping melimpah yang lumer di setiap gigitan.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+            <!-- Mengarah ke katalog.html -->
+            <a href="katalog.html" class="bg-brand-red text-white px-8 py-3 rounded-full font-bold text-lg hover:bg-brand-darkRed transform hover:-translate-y-1 transition-all shadow-lg text-center">
+                Lihat Katalog Menu
+            </a>
+            <!-- Mengarah ke kontak.html -->
+            <a href="kontak.html" class="bg-transparent border-2 border-brand-yellow text-brand-yellow px-8 py-3 rounded-full font-bold text-lg hover:bg-brand-yellow hover:text-brand-dark transform hover:-translate-y-1 transition-all shadow-lg text-center">
+                <i class="fa-solid fa-map-location-dot mr-2"></i> Hubungi Kami
+            </a>
+        </div>
+    </section>
+
+    <!-- HIGHLIGHT MENU PREVIEW -->
+    <section class="py-20 bg-brand-light">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-2">Menu Best Seller</h2>
+            <div class="h-1 w-20 bg-brand-yellow mx-auto mb-12 rounded"></div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                
+                <!-- Preview Manis (Dengan Background Gambar) -->
+                <div class="rounded-2xl p-8 shadow-lg text-white bg-cover bg-center relative overflow-hidden transform hover:scale-[1.02] transition-all duration-300" 
+                     style="background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('https://aboutsemarang.id/wp-content/uploads/2025/12/martabak-manis-sweet-indonesian-pancake-cut-into-slices-on-a-white-background-stockpack-adobe-stock.webp');">
+                    <i class="fa-solid fa-ice-cream text-4xl text-brand-yellow mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2">Martabak Manis </h3>
+                    <p class="text-gray-200 text-sm mb-6">Lembut, bersarang sempurna, dengan lelehan mentega premium legendaris.</p>
+                    <a href="katalog.html" class="bg-brand-yellow text-brand-dark px-4 py-2 rounded-lg font-bold text-xs inline-block hover:bg-yellow-400 transition-colors">
+                        Lihat Varian Manis &rarr;
+                    </a>
+                </div>
+
+                <!-- Preview Telur (Dengan Background Gambar) -->
+                <div class="rounded-2xl p-8 shadow-lg text-white bg-cover bg-center relative overflow-hidden transform hover:scale-[1.02] transition-all duration-300" 
+                     style="background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('https://png.pngtree.com/png-vector/20260424/ourmid/pngtree-savory-crispy-martabak-telur-with-meat-and-vegetable-filling-png-image_19161571.webp');">
+                    <i class="fa-solid fa-egg text-4xl text-brand-yellow mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2">Martabak Telur </h3>
+                    <p class="text-gray-200 text-sm mb-6">Kulit super krispi dengan isian telur bebek gurih dan daging melimpah.</p>
+                    <a href="katalog.html" class="bg-brand-yellow text-brand-dark px-4 py-2 rounded-lg font-bold text-xs inline-block hover:bg-yellow-400 transition-colors">
+                        Lihat Varian Telur &rarr;
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-brand-dark text-gray-400 py-10 text-center">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-center items-center gap-2 mb-4">
+                <i class="fa-solid fa-crown text-brand-yellow"></i>
+                <span class="font-bold text-white text-xl uppercase">Martabak Raja Mas Akrom</span>
+            </div>
+            <p class="mb-6">Kualitas Premium, Rasa Maksimal. Rajanya Martabak di Hati Anda.</p>
+            <p class="text-sm">&copy; 2026 Martabak Raja Mas Akrom. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Mobile Menu Toggle -->
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara Bayar - Martabak Raja Mas Akrom</title>
+    
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { poppins: ['Poppins', 'sans-serif'] },
+                    colors: {
+                        brand: {
+                            red: '#D32F2F',    
+                            darkRed: '#B71C1C',
+                            yellow: '#FFC107', 
+                            dark: '#212121',   
+                            light: '#F5F5F5'   
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-poppins bg-brand-light text-brand-dark antialiased pt-20">
+
+    <!-- NAVBAR -->
+    <nav class="bg-brand-red text-white fixed w-full top-0 z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="index.html" class="flex-shrink-0 flex items-center gap-2 cursor-pointer">
+                    <i class="fa-solid fa-crown text-brand-yellow text-2xl"></i>
+                    <span class="font-bold text-xl md:text-2xl tracking-wide uppercase">Raja Mas Akrom</span>
+                </a>
+                
+                <!-- Desktop Navigation Links -->
+                <div class="hidden md:flex space-x-6 lg:space-x-8">
+                    <a href="index.html" class="hover:text-brand-yellow transition-colors font-medium">Beranda</a>
+                    <a href="tentang.html" class="hover:text-brand-yellow transition-colors font-medium">Tentang Kami</a>
+                    <a href="katalog.html" class="hover:text-brand-yellow transition-colors font-medium">Katalog Menu</a>
+                    <a href="bayar.html" class="text-brand-yellow font-bold">Cara Bayar</a>
+                    <a href="kontak.html" class="hover:text-brand-yellow transition-colors font-medium">Kontak</a>
+                </div>
+
+                <!-- CTA Button -->
+                <div class="hidden md:block">
+                    <a href="katalog.html" class="bg-brand-yellow text-brand-dark px-6 py-2 rounded-full font-bold hover:bg-yellow-400 transform hover:scale-105 transition-all shadow-md">
+                        Pesan Sekarang
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-white hover:text-brand-yellow focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-brand-darkRed pb-4 px-4 space-y-2">
+            <a href="index.html" class="block text-white font-medium py-2 border-b border-red-800">Beranda</a>
+            <a href="tentang.html" class="block text-white font-medium py-2 border-b border-red-800">Tentang Kami</a>
+            <a href="katalog.html" class="block text-white font-medium py-2 border-b border-red-800">Katalog Menu</a>
+            <a href="bayar.html" class="block text-brand-yellow font-bold py-2 border-b border-red-800">Cara Bayar</a>
+            <a href="kontak.html" class="block text-white font-medium py-2">Kontak</a>
+        </div>
+    </nav>
+
+    <!-- HEADER BANNER -->
+    <header class="bg-brand-dark text-white py-12 text-center">
+        <div class="max-w-4xl mx-auto px-4">
+            <h1 class="text-3xl md:text-4xl font-bold mb-3">Informasi Pembayaran</h1>
+            <p class="text-brand-yellow text-base md:text-lg font-medium">Nikmati kemudahan bertransaksi secara tunai maupun nontunai.</p>
+        </div>
+    </header>
+
+    <!-- INFORMASI UTAMA -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        
+        <!-- Alur Pembayaran Grid Step -->
+        <div class="mb-16">
+            <h2 class="text-2xl font-bold text-center mb-8">Langkah Mudah Memesan & Membayar</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Step 1 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border-l-4 border-brand-yellow relative">
+                    <span class="absolute top-4 right-6 text-3xl font-extrabold text-gray-200">01</span>
+                    <i class="fa-solid fa-basket-shopping text-2xl text-brand-red mb-3"></i>
+                    <h3 class="font-bold text-lg mb-2">Pilih Menu</h3>
+                    <p class="text-gray-600 text-sm">Pilih martabak favorit Anda di halaman katalog dan klik tombol Order untuk mengirim pesan ke WhatsApp kami.</p>
+                </div>
+                <!-- Step 2 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border-l-4 border-brand-yellow relative">
+                    <span class="absolute top-4 right-6 text-3xl font-extrabold text-gray-200">02</span>
+                    <i class="fa-solid fa-credit-card text-2xl text-brand-red mb-3"></i>
+                    <h3 class="font-bold text-lg mb-2">Transfer / Scan</h3>
+                    <p class="text-gray-600 text-sm">Admin kami akan menghitung total biaya beserta ongkir (bila dikirim). Lakukan pembayaran lewat rekening atau QRIS di bawah ini.</p>
+                </div>
+                <!-- Step 3 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border-l-4 border-brand-yellow relative">
+                    <span class="absolute top-4 right-6 text-3xl font-extrabold text-gray-200">03</span>
+                    <i class="fa-solid fa-circle-check text-2xl text-brand-red mb-3"></i>
+                    <h3 class="font-bold text-lg mb-2">Konfirmasi</h3>
+                    <p class="text-gray-600 text-sm">Kirim foto bukti transfer ke WhatsApp admin. Martabak Anda akan langsung diproses, dipanggang hangat, dan siap diantar!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Opsi Kanal Pembayaran -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            
+            <!-- Kanal Nontunai (QRIS Gambar Aktif) -->
+            <div class="bg-white p-8 rounded-2xl shadow-md space-y-8">
+                <div>
+                    <h3 class="text-xl font-bold text-brand-dark mb-2 flex items-center gap-2">
+                        <i class="fa-solid fa-qrcode text-brand-red"></i> 1. QRIS (E-Wallet & Mobile Banking)
+                    </h3>
+                    <p class="text-gray-500 text-sm mb-6">Menerima pembayaran dari GoPay, OVO, DANA, LinkAja, ShopeePay, serta seluruh aplikasi bank Anda.</p>
+                    
+                    <!-- Box QRIS Kode Gambar -->
+                    <div class="border-2 border-dashed border-gray-200 rounded-xl p-6 text-center max-w-xs mx-auto bg-gray-50">
+                        <!-- FOTO QRIS ASLI ANDA -->
+                        <img src="/umkm/qr-code-logo-png_seeklogo-217342.png" alt="QRIS Martabak Raja Mas Akrom" class="w-52 h-auto mx-auto mb-4 object-contain rounded-lg shadow-md bg-white p-2">
+                        
+                        <p class="font-bold text-brand-dark uppercase tracking-wider text-sm">QRIS - Raja Mas Akrom</p>
+                        <p class="text-xs text-gray-400 mt-1">Pastikan nama merchant sudah sesuai saat memindai.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kanal Rekening Bank & Tunai -->
+            <div class="space-y-6">
+                <!-- Transfer Bank Card -->
+                <div class="bg-white p-8 rounded-2xl shadow-md border-t-4 border-brand-red">
+                    <h3 class="text-xl font-bold text-brand-dark mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-money-bill-transfer text-brand-red"></i> 2. Transfer Bank
+                    </h3>
+                    
+                    <div class="bg-brand-light p-4 rounded-xl flex items-center justify-between mb-4">
+                        <div>
+                            <p class="text-xs text-gray-500 font-semibold uppercase tracking-wider">Bank BCA</p>
+                            <p class="text-lg font-bold text-brand-dark tracking-wide">2522-0607-0067</p>
+                            <p class="text-sm text-gray-600 mt-0.5">a.n. Muhamad Akrom</p>
+                        </div>
+                        <button onclick="copyRekening('1234567890')" class="bg-brand-red text-white text-xs px-3 py-1.5 rounded-lg hover:bg-brand-darkRed transition-colors font-semibold">
+                            Salin No
+                        </button>
+                    </div>
+
+                    <div class="bg-brand-light p-4 rounded-xl flex items-center justify-between">
+                        <div>
+                            <p class="text-xs text-gray-500 font-semibold uppercase tracking-wider">Bank Mandiri</p>
+                            <p class="text-lg font-bold text-brand-dark tracking-wide">192-168-111-000</p>
+                            <p class="text-sm text-gray-600 mt-0.5">a.n. Muhamad Akrom</p>
+                        </div>
+                        <button onclick="copyRekening('1400012345678')" class="bg-brand-red text-white text-xs px-3 py-1.5 rounded-lg hover:bg-brand-darkRed transition-colors font-semibold">
+                            Salin No
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Tunai Card -->
+                <div class="bg-white p-6 rounded-2xl shadow-md flex items-start gap-4">
+                    <div class="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center text-brand-yellow flex-shrink-0 text-xl">
+                        <i class="fa-solid fa-wallet"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg text-brand-dark">3. Pembayaran Tunai (Cash)</h3>
+                        <p class="text-gray-600 text-sm mt-1">Anda juga bisa memilih opsi pembayaran tunai langsung di tempat saat mengambil pesanan (Takeaway) atau sistem COD melalui kurir internal kami.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-brand-dark text-gray-400 py-10 text-center">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-center items-center gap-2 mb-4">
+                
+                <span class="font-bold text-white text-xl uppercase">Martabak Raja Mas Akrom</span>
+            </div>
+            <p class="mb-6">Kualitas Premium, Rasa Maksimal. Rajanya Martabak di Hati Anda.</p>
+            <p class="text-sm">&copy; 2026 Martabak Raja Mas Akrom. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script>
+        // Mobile Menu Logic
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Copy Clipboard Logic
+        function copyRekening(nomor) {
+            navigator.clipboard.writeText(nomor);
+            alert("Nomor rekening " + nomor + " berhasil disalin!");
+        }
+    </script>
+</body>
+</html>
